@@ -4,7 +4,7 @@ import handleSearchChange from "../actions/search.js";
 
 const mapDispatchToProps = dispatch => {
   return {
-    handleSearchInputChange: () => dispatch(handleSearchChange)
+    handleSearchInputChange: (query) => dispatch(handleSearchChange(query))
   };
 };
 
